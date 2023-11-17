@@ -1,10 +1,15 @@
 import Link from "next/link"
+import TicketCard from "./[component]/TicketCard"
 
 export default function Home() {
   return (
-   <main>
-   <p className="text-center text-3xl h-18 mt-20"> hello this is next js</p>
-   <Link href="/aboutus">Go to About page</Link>
-   </main>
+  
+    <div className="p-6">
+      <div className="lg:grid grid-cols-2 xl:grid-cols-4">
+      <TicketCard/>
+      </div>
+      </div>
+  
+
   )
 }
